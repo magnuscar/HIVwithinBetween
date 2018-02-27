@@ -30,11 +30,11 @@
 %%% Corrections
 \newcommand{\fb}[2][]{\del{#1}{\textcolor{red}{\textbf{#2}}}}
 \newcommand{\cm}[2][]{\del{#1}{\textcolor{blue}{\textbf{#2}}}}
-\newcommand{\ts}[2][]{\del{#1}{\textcolor{green}{\textbf{#2}}}}
+%\newcommand{\ts}[2][]{\del{#1}{\textcolor{green}{\textbf{#2}}}}
 \newenvironment{comm}{\bgroup\bfseries}{\egroup}
-\newcommand{\comVB}[1]{\textcolor{red}{\texttt{[FRANCESCO: #1]}}}
+\newcommand{\comFB}[1]{\textcolor{red}{\texttt{[FRANCESCO: #1]}}}
 \newcommand{\comCM}[1]{\textcolor{blue}{\texttt{[CARSTEN: #1]}}}
-\newcommand{\comTS}[1]{\textcolor{green}{\texttt{[TANJA: #1]}}}
+%\newcommand{\comTS}[1]{\textcolor{green}{\texttt{[TANJA: #1]}}}
 \newcommand{\del}[1]{\sout{#1}}
 
 
@@ -48,12 +48,13 @@
 %%%%%%%%%% TITLE %%%%%%%%%%%%%%
 \title{The influence of viral within-host evolution on transmission chain reconstruction: a simulation study.} 
 
-\author[1,2]{Francesco Bosia}
+\author[1,2,3]{Francesco Bosia}
 %\author[1,2]{Tanja Stadler}
 \author[1,2,$\ast$]{Carsten Magnus} 
 
-\affil[1]{Computational Evolution, Department of Biosystems Science and Engineering, ETH Z\"urich, Mattenstrasse 26, 4058 Basel, Switzerland}
+\affil[1]{Computational Evolution, Department of Biosystems Science and Engineering, ETH Zurich, Mattenstrasse 26, 4058 Basel, Switzerland}
 \affil[2]{Swiss Institute of Bioinformatics (SIB), Switzerland}
+\affil[3]{Current Address: Physical Chemistry, Department of Chemistry and Applied Biosciences, ETH Zurich, Vladimir-Prelog-Weg1-5\/10, 8093 Zurich, Switzerland}
 
 
 
@@ -67,11 +68,51 @@
   \maketitle
 
 \begin{abstract}
-\texttt{to be written at the end}
+Two points are important in this paper:
+\begin{enumerate}
+	\item description of within-host simulation tool
+	\item identify potential factors that could influence the accuracy of transmission tree reconstruction\\
+\end{enumerate}
+Structure for the abstract:
+\begin{item}
+	\item Introduction to topic
+	\item Research Questions
+	\item Methods
+	\item Results
+	\item Relevance
+\end{item}
+
 \end{abstract}
 
-{\bf Keywords}: 
+{\bf Keywords}: HIV-1 transmission, phylogenetics, transmission chain reconstruction, within-host evolution, \ldots
 
+
+\section{Introduction}
+
+\begin{itemize}
+	\item Use of phylogenetics in order to estimate transmission history in communities of HIV infected individuals
+	\item However: within-host evolution might play an important role in the accuracy of transmission chain reconstruction
+	\item Thus: We designed a within-host evolution tool
+	\item Research questions:
+	\begin{enumerate}
+		\item Can transmission chains be reconstructed when sampling times do not match the order of transmission events?
+		\item Which effect do high within-host mutation rates have on the reliability of transmission chain reconstruction?
+		\item Are these two effects dependent on which strains are transmitted (early - i.e. including latent compartment -, or random - i.e. every strain could be transmitted according to their frequencies?
+	\end{enumerate} 	
+\end{itemize}
+
+
+
+
+
+\section{Materials and Methods}
+
+\comCM{Here we describe the simulation tool, the sampling structure, the tree comparison}
+
+
+\section{Results}
+
+\section{Discussion}
 
 
 

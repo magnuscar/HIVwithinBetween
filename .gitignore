@@ -10,5 +10,6 @@
 *.synctex.gz
 *.key
 
+manuscript/HIVreconst.pdf
 
 .Rhistory
